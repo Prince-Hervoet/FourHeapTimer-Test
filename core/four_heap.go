@@ -88,6 +88,10 @@ func (that *FourHeap) Pop() *Timer {
 	return ans
 }
 
+func (that *FourHeap) GetSize() int32 {
+	return that.size
+}
+
 func (that *FourHeap) deleteFromHeap(targetIndex int32) {
 	if targetIndex < 0 || targetIndex == that.size {
 		return

@@ -29,6 +29,7 @@ func main() {
 	fh.Start()
 
 	for {
-		time.Sleep(1000 * time.Second)
+		time.Sleep(1 * time.Second)
+		fmt.Println(fh.GetSize())
 	}
 }
